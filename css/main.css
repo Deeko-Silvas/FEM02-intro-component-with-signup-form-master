@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("../images/bg-intro-mobile.png");
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+p {
+    line-height: 1.8;
+
+}
+
+.content-container {
+    width: 90%;
+    margin: auto;
+}
+
+.main-text {
+    margin-bottom: 70px;
+    max-width: 95%;
+}
+
+.accent {
+    background: hsl(248, 32%, 49%);
+    padding: 20px 10px 15px;
+    margin-bottom: 25px;
+}
+
+form {
+    background: white;
+    padding: 24px;
+    margin-bottom: 50px;
+}
+
+.accent,
+form {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.15);
+}
+
+input,
+button {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+input {
+    border-color: hsl(246, 25%, 77%);
+    border-width: 1px;
+}
+
+button {
+    background-color: hsl(154, 59%, 51%);
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(50,185,129,1);
+    -moz-box-shadow: 0px 4px 0px 0px rgba(50,185,129,1);
+    box-shadow: 0px 4px 0px 0px rgba(50,185,129,1);
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+
+form p {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-size: 11px;
+    color: hsl(246, 25%, 77%);
+}
+
+form p a {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+footer {
+    display: block;
+    position: relative;
+    bottom: 5px;
+    text-align: center;
+}
+
+footer p {
+    margin: auto;
+}
+
+@media (min-width: 999px) {
+    body {
+        height: 100vh;
+        overflow: hidden;
+        padding: 0 160px;
+        background-image: url("../images/bg-intro-desktop.png");
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .content-container {
+        width: 50%;
+        margin: auto;
+    }
+
+    .content-container:first-of-type {
+        text-align: left;
+        /* padding-left: 160px; */
+    }
+
+    .content-container:nth-of-type(2) {
+        /* padding-right: 160px; */
+    }
+
+    form {
+        padding: 40px 20px;
+        margin: auto;
+    }
+}
