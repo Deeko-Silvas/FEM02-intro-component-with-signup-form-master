@@ -25,6 +25,7 @@ h1 {
     font-weight: 600;
     margin-top: 100px;
     margin-bottom: 30px;
+    margin-right: 20px;
 }
 
 p {
@@ -153,7 +154,7 @@ footer p {
     body {
         height: 100vh;
         overflow: hidden;
-        padding: 0 160px;
+        padding: 0 80px;
         background-image: url("../images/bg-intro-desktop.png");
     }
 
@@ -177,11 +178,6 @@ footer p {
 
     .content-container:first-of-type {
         text-align: left;
-        /* padding-left: 160px; */
-    }
-
-    .content-container:nth-of-type(2) {
-        /* padding-right: 160px; */
     }
 
     form {
@@ -192,5 +188,11 @@ footer p {
     input {
         padding-left: 30px;
         margin-top: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        padding: 0 160px;
     }
 }
